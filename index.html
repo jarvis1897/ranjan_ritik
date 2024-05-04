@@ -388,7 +388,7 @@
 
                 <table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-                    <!-- <tr>
+                    <tr>
                         <td style="padding:10px;width:25%;vertical-align:middle">
                             <div class="one">
                                 <img src='images/HiLabs_Primary_RGB_Logo.jpg' width="130">
@@ -401,22 +401,25 @@
                             <br>
                             <br>
                             <p>
-                                <b>Legal Document Processing with GenAI</b>
+                                <b>GenAI Driven Contract Analyzer: Streamlining Claim Verification</b>
                                 <br>
                                 <span>&#8226;</span> 
-                                Led the development of an advanced RAG-based Generative AI service aimed at processing 1000s of large legal documents efficiently for entity retrieval and verification of party agreements
+                                Led the development of advanced retrieval service aimed at processing contracts documents efficiently for domain-specific entity extraction and verification of party agreements for automating claim verification
                                 <br>
                                 <span>&#8226;</span>
-                                Leveraged both open-source LLMs (llama, mistal-ai) and enterprise-grade LLMs (GPT-4, Claude) to construct the solution while maintaining a paramount focus on data privacy
+                                Engineered custom document processing pipeline with LayoutLM extracting entities with images, tables, and text elements
                                 <br>
                                 <span>&#8226;</span>
-                                Orchestrated the deployment of a GPU pipeline on Amazon EMR, ensuring inference times of less than 5 seconds using Docker/Terraform. Conducted rigorous load testing with 20 concurrent users to evaluate performance accurately
+                                Developed Langchain service for indexing extracted elements and managed metadata within OpenSearch to optimize retrieval
                                 <br>
                                 <span>&#8226;</span>
-                                Successfully completed a Proof of Concept (POC) which demonstrated the solution’s effectiveness and potential for widespread adoption. Currently, integrating the solution for 3 clients, showcasing its impact and scalability
+                                Implemented a robust infrastructure leveraging self-hosted LLMs (such as LLama and Mistal-AI) and asynchronous processing via SQS to efficiently handle requests, while prioritizing the utmost security and privacy of sensitive legal contracts
+                                <br>
+                                <span>&#8226;</span>
+                                Successful POCs followed by integration for 3 clients to validate solution effectiveness and potential for widespread adoption
                             </p>
                         </td>
-                    </tr> -->
+                    </tr>
                     
                     <tr>
                         <td style="padding:10px;width:25%;vertical-align:middle">
@@ -431,19 +434,22 @@
                             <br>
                             <br>
                             <p>
-                                <b>Generative Knowledge-Specific Chatbot</b>
+                                <b>Generative Knowledge Specific Chatbot</b>
                                 <br>
                                 <span>&#8226;</span> 
-                                Developed advanced Retrieval Augmented Generation Chatbot using Large Language Models (LLM) for intelligent knowledge access across teams
+                                Developed advanced Retrieval Augmented Generation(RAG) Chatbot with LLM for intelligent knowledge access across teams
                                 <br>
                                 <span>&#8226;</span>
-                                Engineered custom document chunking and indexing pipeline using LangChain and leveraged MiniLM embeddings from Hugging Face for robust feature extraction
+                                Engineered efficient retrieval pipeline with Parent Child document indexing using LangChain and Chroma VectorDB
                                 <br>
                                 <span>&#8226;</span>
-                                Designed efficient retrieval pipeline with ChromaDB, integrating MMR scoring and Azure OpenAI LLM to deliver precise, context-aware responses
+                                Designed agile RAG pipeline, integrating MMR scoring for chunk retrieval and Azure OpenAI LLM for response generation
                                 <br>
                                 <span>&#8226;</span>
-                                Achieved an outstanding 89% acceptance rate in human evaluations and facilitated seamless deployment to 12 internal and 18 external client applications
+                                Implemented user feedback collection to monitor chatbot performance and gather data for iterative refinement and fine-tuning
+                                <br>
+                                <span>&#8226;</span>
+                                Achieved 89% approval in human evaluations and integrated technology into 12 internal and 18 external client applications
                             </p>
                         </td>
                     </tr>
@@ -491,19 +497,19 @@
                             <br>
                             <br>
                             <p>
-                                <b>Chat Services for Employee Helpline Portal</b>
+                                <b>Chatbot Services for Employee Helpline Portal’s Ticketing System</b>
                                 <br>
                                 <span>&#8226;</span> 
-                                Developed Employee Helpline Portal Chatbot with an effective retrieval system for historical ticket resolutions to enhance user support
+                                Developed Employee Helpline Portal Chatbot with effective retrieval of historical ticket resolutions for enhanced user support
                                 <br>
                                 <span>&#8226;</span>
-                                Improved user experience with precise responses using query intent classification and BERT-powered semantic search
+                                Implemented query intent classification and BERT-powered semantic search to deliver precise responses
                                 <br>
                                 <span>&#8226;</span>
-                                Achieved impressive 79% accuracy score, reduced user wait times from 18 to 4 minutes, and decreased the workload for support agents
-                                <!-- <br>
+                                Successfully integrated the chatbot into the portal and achieved the target human agent intervention reduction of 70%
+                                <br>
                                 <span>&#8226;</span>
-                                Deployed service across 12 teams within the organization, facilitating seamless and intelligent access to the 110 documents -->
+                                Achieved 79% accuracy score in evaluation and decreased wait times from 18 to 4 minutes, improving overall user experience
                             </p>
                         </td>
                     </tr> 
@@ -773,7 +779,95 @@
                             <a href="https://patentimages.storage.googleapis.com/83/97/28/e5953844402d45/US20210201004A1.pdf" target="_blank">16/795840</a>
                         </td>
                     </tr>
+                    <tr>
+                        <td style="padding: 10px; width: 70%; vertical-align: top;">
+                            <papertitle><big>Patent Title</big></papertitle>
+                            <br>
+                            Anomaly detection for bill generation
+                        </td>
+                        <td style="padding: 10px; width: 30%; vertical-align: top;">
+                            <papertitle style="color: gray"><big>Agency</big></papertitle>
+                            <br>
+                            USPTO
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; width: 50%; vertical-align: top;">
+                            <papertitle><big>Inventors</big></papertitle>
+                            <br>
+                            <b>Rahul Yadav</b>, Nidhi Rajput, Veresh Jain, Krishnapriya, Amit, Saroj, Aashima
+                        </td>
+                        <td style="padding: 10px; width: 20%; vertical-align: top;">
+                            <papertitle style="color: gray"><big>Applicant</big></papertitle>
+                            <br>
+                            Oracle Financial Services Software Limited
+                        </td>
+                        <td style="padding: 10px; width: 30%; vertical-align: top;">
+                            <papertitle style="color: gray"><big>Link</big></papertitle>
+                            <br>
+                            <a href="https://publish.innography.com/d75a83e2cd2667012b5571f8f3239cb2/patent/US20230196420A1" target="_blank">US17/710745</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; width: 70%; vertical-align: top;">
+                            <papertitle><big>Patent Title</big></papertitle>
+                            <br>
+                            Technology system for assisting financial institutions in debt collection
+                        </td>
+                        <td style="padding: 10px; width: 30%; vertical-align: top;">
+                            <papertitle style="color: gray"><big>Agency</big></papertitle>
+                            <br>
+                            USPTO
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; width: 50%; vertical-align: top;">
+                            <papertitle><big>Inventors</big></papertitle>
+                            <br>
+                            <b>Rahul Yadav</b>, Veresh Jain, Shubham Negi, Rahul Kiran Gaddam, Phanindra Choda
+                        </td>
+                        <td style="padding: 10px; width: 20%; vertical-align: top;">
+                            <papertitle style="color: gray"><big>Applicant</big></papertitle>
+                            <br>
+                            Wipro Limited
+                        </td>
+                        <td style="padding: 10px; width: 30%; vertical-align: top;">
+                            <papertitle style="color: gray"><big>Link</big></papertitle>
+                            <br>
+                            <a href="https://publish.innography.com/d75a83e2cd2667012b5571f8f3239cb2/patent/US20230177602A1" target="_blank">US17/659017</a>
+                        </td>
+                    </tr>
                 </tbody>
+                <!-- <tbody>
+                    <tr>
+                        <th>Patent Title</th>
+                        <th>Agency</th>
+                        <th>Inventors</th>
+                        <th>Applicant</th>
+                        <th>Link</th>
+                    </tr>
+                    <tr>
+                        <td>Method And System For Multimodal Analysis Based Emotion Recognition</td>
+                        <td>USPTO</td>
+                        <td>Rahul Yadav, Gopichand Agnihotram</td>
+                        <td>Wipro Limited</td>
+                        <td><a href="https://patentimages.storage.googleapis.com/83/97/28/e5953844402d45/US20210201004A1.pdf" target="_blank">16/795840</a></td>
+                    </tr>
+                    <tr>
+                        <td>Method And System For Multimodal Analysis Based Emotion Recognition</td>
+                        <td>USPTO</td>
+                        <td>Rahul Yadav, Gopichand Agnihotram</td>
+                        <td>Wipro Limited</td>
+                        <td><a href="https://patentimages.storage.googleapis.com/83/97/28/e5953844402d45/US20210201004A1.pdf" target="_blank">16/795840</a></td>
+                    </tr>
+                    <tr>
+                        <td>Method And System For Multimodal Analysis Based Emotion Recognition</td>
+                        <td>USPTO</td>
+                        <td>Rahul Yadav, Gopichand Agnihotram</td>
+                        <td>Wipro Limited</td>
+                        <td><a href="https://patentimages.storage.googleapis.com/83/97/28/e5953844402d45/US20210201004A1.pdf" target="_blank">16/795840</a></td>
+                    </tr>
+                </tbody> -->
             </table>
             
 
