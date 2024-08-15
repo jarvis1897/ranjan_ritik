@@ -1,3 +1,3 @@
-# ranjan_ritik# rahul.github.io
+# ranjan_ritik#
 
 Ritik Ranjan's Website
